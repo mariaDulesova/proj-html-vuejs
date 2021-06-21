@@ -11,6 +11,8 @@
     <!-- /Main -->
 
     <!-- Footer -->
+    <Footer 
+    :posts='recentPosts'/>
 
     <!-- /Footer -->
   
@@ -19,11 +21,13 @@
 </template>
 
 <script>
+import Footer from './components/Footer'
 
 
 export default {
   name: 'App',
   components: {
+    Footer
     
   },
   data() {
@@ -118,5 +122,5 @@ export default {
 </script>
 
 <style lang="scss">
-  @import './style/general.scss'
+  @import './style/general.scss';
 </style>
