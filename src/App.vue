@@ -1,6 +1,10 @@
 <template>
   <div id="app">
     <!-- Header -->
+    <header>
+      <Nav
+      :menulinks='menuMain'/>
+    </header>
 
     <!-- /Header -->
 
@@ -21,12 +25,15 @@
 </template>
 
 <script>
-import Footer from './components/Footer'
+import Nav from './components/Nav';
+import Footer from './components/Footer';
+
 
 
 export default {
   name: 'App',
   components: {
+    Nav,
     Footer
     
   },

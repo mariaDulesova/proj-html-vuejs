@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="ms-copyright py-5 text-center">
-            <p>Copyright 2012 - 2020 | Avada them by <span>ThemeFusion</span>| All rights reserved | Powered by <span>WordPress</span></p>
+            <p>&copy; Copyright 2012 - 2020 | Avada them by <span>ThemeFusion</span>| All rights reserved | Powered by <span>WordPress</span></p>
         </div>
             
     </div>
@@ -51,11 +51,6 @@ export default {
             .ms-container{
                 width: calc(100% / 3);
                 margin: 80px 0;
-
-                img {
-                    width: 250px
-                }
-                
 
                 p {
                     color:#bcbcbc;
