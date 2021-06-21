@@ -1,25 +1,18 @@
 <template>
   <div id="app">
     <!-- Header -->
-    <header>
-      <Nav
-      :menulinks='menuMain'/>
-
-      <Jambotron/>
-    </header>
-
+    <Header
+      :menulinks='menuMain'
+    />
     <!-- /Header -->
 
     <!-- Main -->
-    <main>
-      
-    </main>
+    <Main />
     <!-- /Main -->
 
     <!-- Footer -->
     <Footer 
     :posts='recentPosts'/>
-
     <!-- /Footer -->
   
     
@@ -27,8 +20,8 @@
 </template>
 
 <script>
-import Nav from './components/Nav';
-import Jambotron from'./components/Jambotron';
+import Header from './components/Header';
+import Main from './components/Main';
 import Footer from './components/Footer';
 
 
@@ -36,8 +29,8 @@ import Footer from './components/Footer';
 export default {
   name: 'App',
   components: {
-    Nav,
-    Jambotron,
+    Header,
+    Main,
     Footer
     
   },

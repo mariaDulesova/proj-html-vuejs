@@ -2,8 +2,9 @@
     <div class="ms-jambotron">
         <div class="ms-wrap d-flex justify-content-between align-items-center">
             <div class="d-flex flex-column justify-content-center">
-                <h3 class='py-3'>Certified fitness professional</h3>
-                <h1>Take control of your health</h1>
+                <h3 >Certified fitness professional</h3>
+                <h1 class='py-3'>Take control of your health</h1>
+                <img src="../assets/img/wave.png" alt="Wave" width='80'>
                 <p class='py-4'>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.</p>
                 <div class='d-flex'>
                     <div class='d-flex align-items-center ms-btn-full px-5 py-3'>
