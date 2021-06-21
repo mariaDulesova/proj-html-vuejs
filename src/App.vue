@@ -4,6 +4,8 @@
     <header>
       <Nav
       :menulinks='menuMain'/>
+
+      <Jambotron/>
     </header>
 
     <!-- /Header -->
@@ -26,6 +28,7 @@
 
 <script>
 import Nav from './components/Nav';
+import Jambotron from'./components/Jambotron';
 import Footer from './components/Footer';
 
 
@@ -34,6 +37,7 @@ export default {
   name: 'App',
   components: {
     Nav,
+    Jambotron,
     Footer
     
   },

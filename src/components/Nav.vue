@@ -1,7 +1,7 @@
 <template>
     <div>
         <nav class='d-flex justify-content-between align-items-center ms-wrap py-4'>
-            <img src="../assets/img/logo.png" alt="Logo Avada">
+            <img src="../assets/img/logo.png" alt="Logo Avada" class="my-2">
             <div class="d-flex align-items-center">
                 <ul class ='d-flex align-items-center'>
                     <li 
@@ -91,6 +91,11 @@ export default {
                 color: white;
                 text-decoration: none;
                 font-size: 0.9rem;
+                transition: all 0.3s;
+
+                &:hover{
+                    background-color: #f04e4b;
+                }
             }
 
         }
