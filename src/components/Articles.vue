@@ -41,7 +41,6 @@ export default {
 
 
         p{
-            display: block;
             color:  #78787a;
             text-decoration: none;
         }

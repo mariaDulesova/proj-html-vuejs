@@ -31,6 +31,8 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+    @import '../style/mixins.scss';
+
     .ms-jambotron {
         height: 700px;
         background-image: linear-gradient(to right, #060606 40%, #06060600),url('../assets/img/slider82x-scaled.jpg');
@@ -55,14 +57,8 @@ export default {
             }
 
             .ms-btn-full{
-                background-color: #4154fe;
-                border-radius: 25px;
-                color: white;
-                transition: all 0.3s;
-                &:hover {
-                    background-color: #f04e4b;
-                }
-
+                @include my-main-button;
+                
                 a {
                     color: white;
                     text-decoration: none;

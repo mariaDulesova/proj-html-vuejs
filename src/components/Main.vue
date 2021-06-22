@@ -7,6 +7,9 @@
         <Subscribe/>
         <Articles
         :itemarticles='articleLinks'/>  
+        <Buy/>
+        <Sponsors
+        :itemsponsors='sponsorLinks'/>
     </main>
 </template>
 
@@ -16,6 +19,8 @@ import Videochannel from './Videochannel';
 import Playlist from './Playlist';
 import Subscribe from'./Subscribe';
 import Articles from './Articles';
+import Buy from './Buy';
+import Sponsors from './Sponsors';
 
 
 export default {
@@ -25,9 +30,11 @@ export default {
         Videochannel,
         Playlist,
         Subscribe,
-        Articles
+        Articles,
+        Buy,
+        Sponsors
     },
-    props:['videoLinks', 'articleLinks']
+    props:['videoLinks', 'articleLinks', 'sponsorLinks']
 
 }
 </script>

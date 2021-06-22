@@ -10,6 +10,7 @@
     <Main 
       :videoLinks='videos'
       :articleLinks='articles'
+      :sponsorLinks='sponsors'
     />
     <!-- /Main -->
 
@@ -100,6 +101,32 @@ export default {
           post: 'By admin | November 26th, 2019 | Gym'
         },
 
+      ],
+      sponsors: [
+        {
+          label:'sponsor-1-2x-200x103',
+          name: 'Yoga Studio',
+          description:'Tristique aliquam in nullam habitasse nunc, amet vel consectetur. Nulla in suspendisse dolor, aliquet.',
+          link:'Visit Yoga Studio'
+        },
+        {
+          label:'sponsor-2-2x-200x103',
+          name: 'Fitness Center',
+          description:'Feugiat etiam dui mauris pharetra mauris sed pharetra. Convallis sapien ornare cras faucibus nulla porta dui a.',
+          link:'Join Fitness Center'
+        },
+        {
+          label:'sponsor-3-2x-200x103',
+          name: 'Fitness Club',
+          description:'Nisl at quam adipiscing montes, nec, adipiscing commodo aliquam tincidunt. Ligula in habitant et sagittis imperdiet.',
+          link:'Learn about FC'
+        },
+        {
+          label:'sponsor-4-2x-200x103',
+          name: 'Power Gym',
+          description:'Proin in viverra maecenas et mattis ut nibh enim. Gravida ultricies mi porta lacus. Et posuere velit sed nec eleifend.',
+          link:'Visit Power Gym'
+        }
       ],
       recentPosts: [
         {

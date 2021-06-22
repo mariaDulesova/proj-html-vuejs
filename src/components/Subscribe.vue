@@ -13,9 +13,7 @@
                         <button type="submit" class=" btn py-3 ms-btn-full">Subscribe</button>
                     </div>
                 </form>
-
                 <p class='py-4'>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur adipiscing elit sed porttitor lectus.</p>
-                
             </div>
         </div>
         
@@ -30,6 +28,8 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+    @import '../style/mixins.scss';
+    
     .ms-jambotron {
         height: 700px;
         background-image: linear-gradient(to right, #060606 40%, #00000000),url('../assets/img/banner1-2x.jpg');
@@ -57,14 +57,7 @@ export default {
             }
 
             .ms-btn-full{
-                background-color: #4154fe;
-                border-radius: 30px;
-                color: white;
-                transition: all 0.3s;
-                &:hover {
-                    background-color: #f04e4b;
-                }
-
+                @include my-main-button;
             }
 
             input{

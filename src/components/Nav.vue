@@ -38,6 +38,7 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+    @import '../style/mixins.scss';
   
     .ms-wrap{
         width: 70%;
@@ -79,16 +80,9 @@ export default {
         }
 
         .ms-btn{
-            background-color: #4154fe;
-            border-radius: 20px;
-            color: white;
-            text-decoration: none;
             font-size: 0.9rem;
-            transition: all 0.3s;
-
-            &:hover{
-                background-color: #f04e4b;
-            }
+            text-decoration: none;
+            @include my-main-button;
         }
     }
 </style>

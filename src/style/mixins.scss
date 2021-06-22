@@ -1,0 +1,14 @@
+@mixin my-main-button {
+    background-color: #4154fe;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    color: white;
+    transition: all 0.3s;
+    &:hover {
+        background-color: #f04e4b;
+    }
+
+}
