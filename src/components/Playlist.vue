@@ -31,6 +31,10 @@ export default {
         margin: 0 auto;
     }
 
+    h4,h5{
+        font-weight: 400;
+    }
+
     .ms-container {
         img{
             width: 100%;

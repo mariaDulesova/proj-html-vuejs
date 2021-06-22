@@ -85,17 +85,17 @@ export default {
       ],
       articles:[
         {
-          url:'./assets/img/blog4-2x-400x258.jpg',
+          url:'blog4-2x-400x258',
           title: 'The best protein shake',
           post: 'By admin | November 26th, 2019 | Gym'
         },
         {
-          url:'./assets/img/blog1-2x-400x258.jpg',
+          url:'blog1-2x-400x258',
           title: 'Ultimate cardio workout',
           post: 'By admin | November 26th, 2019 | Gym'
         },
         {
-          url:'./assets/img/blog3-2x-400x258.jpg',
+          url:'blog3-2x-400x258',
           title: 'New juices available now',
           post: 'By admin | November 26th, 2019 | Gym'
         },

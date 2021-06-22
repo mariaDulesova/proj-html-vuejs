@@ -1,16 +1,16 @@
 <template>
     <section class='ms-wrap my-5 py-5'>
         <div class="d-flex justify-content-between align-items-center mx-3 my-5">
-            <h4 >Featured playlists</h4>
-            <span>View all videos<i class="fas fa-chevron-right mx-2"></i></span>
+            <h4>Latest Articles</h4>
+            <span>Read all articles<i class="fas fa-chevron-right mx-2"></i></span>
         </div>
         <div class='d-flex justify-content-between ms-container '>
-            <div v-for="(itemvideo,index) in itemvideos" :key="index" class='mx-3 '>
+            <div v-for="(itemarticle,index) in itemarticles" :key="index" class='mx-3 '>
                 <div class="position-relative">
-                    <img :src="require(`../assets/video/${itemvideo.url}.jpg`)" :alt="`${itemvideo.title}`" class="mb-4 ">
+                    <img :src="require(`../assets/img/${itemarticle.url}.jpg`)" :alt="`${itemarticle.title}`" class="mb-4 ">
                 </div>
-                <h5 class="text-center">{{ itemvideo.title }}</h5>
-                <a href="#" class="text-center"> {{ itemvideo.subTitle }}</a>
+                <h4 class="px-3">{{ itemarticle.title }}</h4>
+                <p class="px-3"> {{ itemarticle.post }}</p>
             </div>
         </div>
     </section>
@@ -19,7 +19,7 @@
 <script>
 export default {
     name: 'Articles',
-    props: ['itemvideos']
+    props: ['itemarticles']
 
 }
 </script>
@@ -29,16 +29,20 @@ export default {
         width: 70%;
         margin: 0 auto;
     }
+    h4{
+        font-weight: 400;
+    }
 
     .ms-container {
         img{
             width: 100%;
-            border-radius: 10px 10px 70px 10px;
+           
         }
 
-        a{
+
+        p{
             display: block;
-            color:  #4154fe;
+            color:  #78787a;
             text-decoration: none;
         }
 

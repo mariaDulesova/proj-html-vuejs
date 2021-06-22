@@ -5,7 +5,7 @@
         <Playlist
         :itemvideos='videoLinks'/>
         <Articles
-        :itemarticle='articleLinks'/>
+        :itemarticles='articleLinks'/>
     </main>
 </template>
 
