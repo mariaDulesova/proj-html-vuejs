@@ -1,9 +1,9 @@
 <template>
-    <div class="ms-jambotron">
+    <div class="ms-jambotron pb-5">
         <div class="ms-wrap d-flex justify-content-between align-items-center">
             <div class="d-flex flex-column justify-content-center">
                 <h3 >Certified fitness professional</h3>
-                <h1 class='py-3'>Take control of your health</h1>
+                <h1 class='py-3 display-3'>Take control of your health</h1>
                 <img src="../assets/img/wave.png" alt="Wave" width='80'>
                 <p class='py-4'>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.</p>
                 <div class='d-flex'>
@@ -32,7 +32,7 @@ export default {
 
 <style scoped lang='scss'>
     .ms-jambotron {
-        height: 670px;
+        height: 700px;
         background-image: linear-gradient(to right, #060606 40%, #06060600),url('../assets/img/slider82x-scaled.jpg');
         background-position: right top;
         background-size: cover;
@@ -48,9 +48,6 @@ export default {
             }
             h1{
                 color:white;
-                font-size: 4rem;
-                letter-spacing: 4px;
-                font-weight: 500;
             }
             p {
                 color:#bcbcbc;

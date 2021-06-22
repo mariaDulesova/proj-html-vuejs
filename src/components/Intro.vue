@@ -3,7 +3,7 @@
     <div class='ms-wrap d-flex flex-column justify-content-center align-items-center pb-5'>
       <div class="d-flex justify-content-center ms-services mb-5">
         <div v-for="(service, index) in services" :key='index' class="position-relative">
-          <img :src="require(`../assets/img/${service.name}.jpg`)" alt="" class="p-4">
+          <img :src="require(`../assets/img/${service.name}.jpg`)" :alt="`${service.title}`" class="p-4">
           <div class="position-absolute bottom-0 start-0 p-5 ms-text-absolute">
             <h4 class="ms-3">{{ service.title }}</h4>
             <p class="ms-3">{{ service.subTitle }}</p>
@@ -55,12 +55,13 @@ section {
   background-image: linear-gradient(to bottom right, #0517DE 20%, #bc0428)
 }
 .ms-wrap {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 
   q {
     font-size: 3rem;
     color: white;
+    width: 90%;
   }
 
   .ms-services {
