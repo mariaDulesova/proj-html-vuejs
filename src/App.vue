@@ -7,7 +7,10 @@
     <!-- /Header -->
 
     <!-- Main -->
-    <Main />
+    <Main 
+      :videoLinks='videos'
+      :articleLinks='articles'
+    />
     <!-- /Main -->
 
     <!-- Footer -->
@@ -64,17 +67,17 @@ export default {
       ],
       videos: [
         {
-          url: './assets/video/video2-2x.jpg',
+          url: 'video2-2x',
           title: 'Thighs & glute workout',
           subTitle: 'Increase your mobility'
         },
         {
-          url: './assets/video/video7-2x.jpg',
+          url: 'video7-2x',
           title: 'Lift, firm & perk up',
           subTitle: 'Feel young again'
         },
         {
-          url: './assets/video/video9-2x.jpg',
+          url: 'video9-2x',
           title: 'Slim & trim your waist',
           subTitle: 'Shed those extra pounds'
         }
