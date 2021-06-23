@@ -25,11 +25,8 @@ export default {
         background-repeat: no-repeat;
 
         .fa-play{
-            display:block;
+            @include play-button;
             padding: 35px;
-            background-color: white;
-            border-radius: 50%;
-            color: #4154fe;
         }
 
         h2{

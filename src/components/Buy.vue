@@ -44,10 +44,7 @@ export default {
                 color: white;
                 text-decoration: none;
             }
-        }
-            
+        }     
     }
-
-    
 
 </style>

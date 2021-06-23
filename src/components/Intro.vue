@@ -1,10 +1,12 @@
 <template>
   <section class='pb-5'>
     <div class='ms-wrap d-flex flex-column justify-content-center align-items-center pb-5'>
-      <div class="d-flex justify-content-center ms-services mb-5">
-        <div v-for="(service, index) in services" :key='index' class="position-relative">
-          <img :src="require(`../assets/img/${service.name}.jpg`)" :alt="`${service.title}`" class="p-4">
-          <div class="position-absolute bottom-0 start-0 p-5 ms-text-absolute">
+      <div class="d-flex justify-content-between ms-services mb-5">
+        <div v-for="(service, index) in services" :key='index' class="position-relative ms-container">
+          <div>
+            <img :src="require(`../assets/img/${service.name}.jpg`)" :alt="`${service.title}`">
+          </div>
+          <div class="position-absolute bottom-0 start-0 pt-5 ps-2 pb-2 ms-text-absolute">
             <h4 class="ms-3">{{ service.title }}</h4>
             <p class="ms-3">{{ service.subTitle }}</p>
           </div> 
@@ -17,7 +19,6 @@
         <h5 class="me-3">Brad Johnson</h5>
         <p>Las Vegas</p>
       </div>
-  
     </div>
   </section>    
 </template>
@@ -51,61 +52,68 @@ export default {
 </script>
 
 <style scoped lang='scss'>
-section {
-  background-image: linear-gradient(to bottom right, #0517DE 20%, #bc0428)
-}
-.ms-wrap {
-  width: 70%;
-  margin: 0 auto;
+  @import '../style/mixins.scss';
 
-  q {
-    font-size: 3rem;
-    color: white;
-    width: 90%;
-  }
+  section {
+    background-image: linear-gradient(to bottom right, #0517DE 20%, #bc0428);
 
-  .ms-services {
-    img {
-      width: 440px;
-      margin-top: -110px;
-      border-radius: 30px 30px 70px 30px;
-      filter: brightness(70%);
-      
+    .ms-wrap {
+    @include my-wrap;
     }
 
-    .ms-text-absolute{
-      
-      h4 {
+    q {
+      font-size: 3rem;
+      color: white;
+      width: 90%;
+    }
+
+    .ms-services {
+      .ms-container {
+        width: calc(90% / 3);
+      }
+
+      img {
+        width: 100%;
+        margin-top: -110px;
+        border-radius: 10px 10px 70px 10px;
+        filter: brightness(60%);
+        transition: all 0.2s;
+ 
+      }
+    
+      .ms-text-absolute{
+        width: 100%;
+        //background: linear-gradient( rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.932));
+        //border-radius: 10px 10px 70px 10px;
+        
+
+        h4 {
+          color: white;
+          font-size: 2rem;
+          letter-spacing: 1px;
+        }
+        p {
+          color: yellow;
+          font-size: 1.5rem;
+        }
+
+      }
+    }
+    
+    .ms-avatar{
+      img{
+        width: 60px;
+        border-radius: 50%;
+      }
+      h5 {
+        margin-top: 0.5rem;
         color: white;
-        font-size: 2rem;
-        letter-spacing: 1px;
       }
       p {
-        color: yellow;
-        font-size: 1.5rem;
+        margin-top: 1rem;
+        color:#bcbcbc;
+        font-size: 17px;
       }
-
     }
   }
-  
-
-  .ms-avatar{
-    img{
-      width: 60px;
-      border-radius: 50%;
-    }
-    h5 {
-      margin-top: 0.5rem;
-      color: white;
-    }
-
-    p {
-      margin-top: 1rem;
-      color:#bcbcbc;
-      font-size: 17px;
-    }
-
-  }
-}
-
 </style>

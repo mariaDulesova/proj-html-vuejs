@@ -23,7 +23,6 @@
 <script>
 export default {
     name: 'Subscribe'
-
 }
 </script>
 
@@ -38,10 +37,9 @@ export default {
         background-repeat: no-repeat;
 
         .ms-wrap{
-            width: 70%;
+            @include my-wrap;
             height: 100%;
-            margin: 0 auto;
-
+            
             h3{
                 color: #f04e4b;
             }
@@ -51,21 +49,18 @@ export default {
             p {
                 color:#bcbcbc;
                 font-size: 20px;
+                width: 80%;
             }
             .ms-container {
                 width: 70%;
             }
-
             .ms-btn-full{
                 @include my-main-button;
             }
-
             input{
                 height: 100%;
                 border-radius: 30px;
             }
-          
         }
     }
-
 </style>

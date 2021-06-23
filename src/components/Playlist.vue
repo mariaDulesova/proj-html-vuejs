@@ -26,9 +26,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+    @import '../style/mixins.scss';
+
     .ms-wrap {
-        width: 70%;
-        margin: 0 auto;
+        @include my-wrap;
     }
 
     h4,h5{
@@ -48,10 +49,7 @@ export default {
         }
 
         .fa-play{
-            display:block;
-            background-color: white;
-            border-radius: 50%;
-            color: #4154fe;
+            @include play-button;
             font-size: 0.7rem;
         }
     }

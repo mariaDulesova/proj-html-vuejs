@@ -41,9 +41,8 @@ export default {
         background-repeat: no-repeat;
 
         .ms-wrap{
-            width: 70%;
+            @include my-wrap;
             height: 100%;
-            margin: 0 auto;
 
             h3{
                 color: #f04e4b;
@@ -86,10 +85,7 @@ export default {
             }
 
             .fa-play{
-                display:block;
-                background-color: white;
-                border-radius: 50%;
-                color: #4154fe;
+                @include play-button;
             }
         }
     }

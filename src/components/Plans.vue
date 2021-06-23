@@ -16,17 +16,17 @@
 export default {
     name: 'Plans',
     props: ['itemtrainings']
-
 }
 </script>
 
 <style scoped lang='scss'>
+    @import '../style/mixins.scss';
+
     section {
         background-color: #060606;
 
         .ms-wrap {
-            width: 70%;
-            margin: 0 auto;
+            @include my-wrap;
 
             .ms-service-card{
                 border: 4px solid #4154fe;
@@ -35,17 +35,14 @@ export default {
                 h3{
                     color: white;
                 }
-
                 h4{
                     color: yellow;
                 }
-
                 p{
                     color: #bcbcbc;
                     line-height: 25px;
                     font-size: 17px;
                 }
-
                 a{
                     display: block;
                     text-decoration: none;

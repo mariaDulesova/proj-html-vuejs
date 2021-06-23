@@ -1,7 +1,7 @@
 <template>
   <section class='d-flex ms-videochannel'>
         <div class="ms-container ms-container-left position-relative">
-            <!-- <img src="../assets/img/service15-2x.jpg" alt=""> -->
+            <img src="../assets/img/service15-2x.jpg" alt="">
             <i class="fas fa-play p-5 position-absolute top-50 start-50 translate-middle"></i>
         </div>
         <div class="ms-container d-flex flex-column justify-content-center align-items-start ms-5">
@@ -35,6 +35,8 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+    @import '../style/mixins.scss';
+
     .ms-videochannel{
         width: 100%;
         height: 700px;
@@ -44,27 +46,17 @@ export default {
 
         .ms-container-left{
             margin-top: -60px;
-            background-image: url('../assets/img/service15-2x.jpg');
-            background-position: center;
-            background-position: fixed;
-            background-repeat: no-repeat;
-            border-radius: 5px 5px 70px 0px;
-            background-size: 100%;
             
-
-            // img{
-            //     width: 100%;
-            //     height: 100%;
-            //     border-radius: 5px 5px 70px 0px;
-            //     object-position: center;
-            //     object-fit: contain;
-            // }
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 5px 5px 70px 0px;
+                object-position: center;
+                object-fit: cover;
+            }
 
             .fa-play{
-                display:block;
-                background-color: white;
-                border-radius: 50%;
-                color: #4154fe;
+                @include play-button;
             }
         }
 

@@ -19,9 +19,10 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+    @import '../style/mixins.scss';
+
     .ms-wrap {
-        width: 70%;
-        margin: 0 auto;
+        @include my-wrap;
 
         img{
             width: 160px;

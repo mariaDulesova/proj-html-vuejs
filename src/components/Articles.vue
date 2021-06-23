@@ -25,29 +25,22 @@ export default {
 </script>
 
 <style scoped lang="scss">
+    @import '../style/mixins.scss';
+
     .ms-wrap {
-        width: 70%;
-        margin: 0 auto;
-    }
-    h4{
+        @include my-wrap;
+
+        h4{
         font-weight: 400;
-    }
-
-    .ms-container {
-        img{
-            width: 100%;
-           
         }
-
-
-        p{
-            color:  #78787a;
-            text-decoration: none;
-        }
-
-       
+        .ms-container {
+            img{
+                width: 100%;
+            }
+            p{
+                color:  #78787a;
+                text-decoration: none;
+            }
+        }  
     }
-    
-    
-
 </style>

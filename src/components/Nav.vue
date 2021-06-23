@@ -41,8 +41,7 @@ export default {
     @import '../style/mixins.scss';
   
     .ms-wrap{
-        width: 70%;
-        margin: 0 auto;
+        @include my-wrap;
 
         ul {
             list-style: none;

@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div class="ms-wrap d-flex">
-            <div class='d-flex flex-column align-items-center p-3 ms-container'>
+        <div class="ms-wrap d-flex py-5">
+            <div class='d-flex flex-column align-items-center p-3 ms-container my-5'>
                 <img src="../assets/img/logo.png" alt="Logo Avada" class="mb-2" >
                 <p class="py-3">Ac aliquam neque sagittis diam faucibus vitae purus turpis phasellus. Pellentesque consectetur amet purus ultrices mauris.</p>
                 <div class="ms-socials d-flex justify-content-center">
@@ -12,11 +12,11 @@
                     <i class="fab fa-linkedin-in px-2"></i>
                 </div>
             </div>
-            <div class='d-flex flex-column align-items-center px-3 ms-container'>
+            <div class='d-flex flex-column align-items-center px-3 ms-container my-5'>
                 <h4 class="p-3">Recent Posts</h4>
                 <a href="#" v-for='(post,index) in posts' :key='index' class='py-2'> <i class="fas fa-chevron-right me-2"></i> {{ post.title}} </a>
             </div>
-            <div class='d-flex flex-column align-items-center px-3 ms-container'>
+            <div class='d-flex flex-column align-items-center px-3 ms-container my-5'>
                 <h4 class="p-3">Contact informations</h4>
                 <p class='py-2'>4746 Tipple Road Michigan 48449</p>
                 <div class='d-flex flex-column align-items-center my-4'>
@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <div class="ms-copyright py-5 text-center">
+        <div class="ms-copyright py-4 text-center">
             <p>&copy; Copyright 2012 - 2020 | Avada them by <span>ThemeFusion</span>| All rights reserved | Powered by <span>WordPress</span></p>
         </div>
             
@@ -41,16 +41,15 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+    @import '../style/mixins.scss';
 
     div{
         background-color: #060606;
         .ms-wrap{
-            width: 70%;
-            margin: 0 auto;
+            @include my-wrap;
 
             .ms-container{
                 width: calc(100% / 3);
-                margin: 80px 0;
 
                 p {
                     color:#bcbcbc;
@@ -87,5 +86,4 @@ export default {
         color: white;
     }
     
-
 </style>
