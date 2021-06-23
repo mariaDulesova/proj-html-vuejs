@@ -2,13 +2,13 @@
   <section class='pb-5'>
     <div class='ms-wrap d-flex flex-column justify-content-center align-items-center pb-5'>
       <div class="d-flex justify-content-between ms-services mb-5">
-        <div v-for="(service, index) in services" :key='index' class="position-relative ms-container">
-          <div>
+        <div v-for="(service, index) in services" :key='index' class="ms-container">
+          <div class="ms-img-container position-relative ">
             <img :src="require(`../assets/img/${service.name}.jpg`)" :alt="`${service.title}`">
-          </div>
-          <div class="position-absolute bottom-0 start-0 pt-5 ps-2 pb-2 ms-text-absolute">
-            <h4 class="ms-3">{{ service.title }}</h4>
-            <p class="ms-3">{{ service.subTitle }}</p>
+            <div class="position-absolute bottom-0 start-0 pt-5 ps-2 pb-2 ms-text-absolute">
+              <h4 class="ms-3">{{ service.title }}</h4>
+              <p class="ms-3">{{ service.subTitle }}</p>
+            </div> 
           </div> 
         </div>
       </div>
@@ -70,23 +70,24 @@ export default {
     .ms-services {
       .ms-container {
         width: calc(90% / 3);
+
+        .ms-img-container{
+          margin-top: -110px;
+          border-radius: 10px 10px 70px 10px;
+          overflow: hidden;
+        }
       }
 
       img {
         width: 100%;
-        margin-top: -110px;
-        border-radius: 10px 10px 70px 10px;
-        filter: brightness(60%);
-        transition: all 0.2s;
- 
+        overflow: hidden;
+        //transition: all 0.2s;
       }
     
       .ms-text-absolute{
         width: 100%;
-        //background: linear-gradient( rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.932));
-        //border-radius: 10px 10px 70px 10px;
-        
-
+        background: linear-gradient( rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.932));
+      
         h4 {
           color: white;
           font-size: 2rem;
