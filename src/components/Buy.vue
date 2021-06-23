@@ -1,6 +1,7 @@
 <template>
   <section class="d-flex flex-column justify-content-center align-items-center">
         <q class="text-center my-5">I've failed over and over again in my life. And that is why I succeed</q>
+        <img src="../assets/img/wave.png" alt="Wave" width='80'>
         <p class='text-center py-4'>Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In lacinia lacus donec sed massa in ipsum eros, tristique. Gravida suspendisse etiam in iaculis</p>
         <div class='d-flex align-items-center ms-btn-full ms-4 px-5 py-3' >
             <a href="#"> Buy Avada today</a>

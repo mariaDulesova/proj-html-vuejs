@@ -7,7 +7,7 @@
                 <img src="../assets/img/wave.png" alt="Wave" width='80'>
                 <form class="row mt-5">
                     <div class="col-7">
-                        <input type="email" class="form-control" id="email" placeholder="Insert your email...">
+                        <input type="email" class="form-control ps-4" id="email" placeholder="Insert your email...">
                     </div>
                     <div class="d-grid col-4 ms-4">
                         <button type="submit" class=" btn py-3 ms-btn-full">Subscribe</button>

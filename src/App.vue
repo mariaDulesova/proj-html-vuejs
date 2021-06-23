@@ -11,6 +11,7 @@
       :videoLinks='videos'
       :articleLinks='articles'
       :sponsorLinks='sponsors'
+      :training='trainingPlans'
     />
     <!-- /Main -->
 
@@ -83,6 +84,29 @@ export default {
           subTitle: 'Shed those extra pounds'
         }
 
+      ],
+      trainingPlans:[
+        {
+          icon: 'watch',
+          title:'Team training',
+          subTitle: 'Find a partner',
+          description: 'Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique',
+          link:'Find a partner'
+        },
+        {
+          icon: 'fitness',
+          title:'Crossfit workout',
+          subTitle: 'Push your limits',
+          description: 'Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique',
+          link:'Learn about Crossfit'
+        },
+        {
+          icon: 'body',
+          title:'Weight loss plan',
+          subTitle: 'Shed those pounds',
+          description: 'At laoreet senectus volutpat diam vel sed sed amet pellentesque. Lobortis ut aliquam risus purus. A tellus ut etiam.',
+          link:'Schedule a workout'
+        }
       ],
       articles:[
         {
