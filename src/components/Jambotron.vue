@@ -34,7 +34,7 @@ export default {
     @import '../style/mixins.scss';
 
     .ms-jambotron {
-        height: 700px;
+        height: 800px;
         background-image: linear-gradient(to right, #060606 40%, #06060600),url('../assets/img/slider82x-scaled.jpg');
         background-position: right top;
         background-size: cover;
@@ -64,8 +64,8 @@ export default {
                 }
             }
             .ms-btn-empty {
-                border: 2px solid #78787a;
-                border-radius: 25px;
+                border: 3px solid #78787a;
+                border-radius: 30px;
                 transition: all 0.3s;
                 &:hover{
                     background-color: white;

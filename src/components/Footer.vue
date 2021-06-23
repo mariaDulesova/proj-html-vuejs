@@ -70,6 +70,11 @@ export default {
                 a{
                     color: white;
                     text-decoration: none;
+                    transition: all 0.2s;
+                    &:hover{
+                        transform: scale(1.1);
+                        color: #4154fe;
+                    }
                 } 
             }
         }

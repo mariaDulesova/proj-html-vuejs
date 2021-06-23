@@ -1,5 +1,5 @@
 <template>
-    <div class="ms-jambotron pb-5">
+    <div class="ms-jambotron py-5">
         <div class="ms-wrap d-flex justify-content-between align-items-center">
             <div class="d-flex flex-column justify-content-center ms-container">
                 <h3 >Join our mailing list today</h3>
@@ -16,7 +16,6 @@
                 <p class='py-4'>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur adipiscing elit sed porttitor lectus.</p>
             </div>
         </div>
-        
     </div>
 </template>
 
@@ -30,7 +29,7 @@ export default {
     @import '../style/mixins.scss';
     
     .ms-jambotron {
-        height: 700px;
+        height: 800px;
         background-image: linear-gradient(to right, #060606 40%, #00000000),url('../assets/img/banner1-2x.jpg');
         background-position: right top;
         background-size: cover;

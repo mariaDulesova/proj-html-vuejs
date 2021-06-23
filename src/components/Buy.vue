@@ -21,7 +21,7 @@ export default {
     @import '../style/mixins.scss';
 
     section{
-        height: 705px;
+        height: 800px;
         background-image: linear-gradient(to top, #060606 , #06060600), url('../assets/img/banner2-2x.jpg');
         background-position: center;
         background-size: cover;

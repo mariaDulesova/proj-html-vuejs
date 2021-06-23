@@ -18,7 +18,7 @@ export default {
     @import '../style/mixins.scss';
 
     section{
-        height: 705px;
+        height: 800px;
         background-image: linear-gradient(to bottom right, #0213918f, #66002994), url('../assets/img/banner14-2x.jpg');
         background-position: center;
         background-size: cover;
@@ -39,6 +39,12 @@ export default {
             color: white;
             text-decoration: none;
             font-size: 20px;
+            transition: all 0.2s;
+
+            &:hover{
+                transform: scale(1.1);
+                color: #4154fe;
+            }
         }
     }
 </style>

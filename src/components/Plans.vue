@@ -6,7 +6,7 @@
                 <h3>{{ training.title }}</h3>
                 <h4>{{ training.subTitle }}</h4>
                 <p class="mt-5"> {{ training.description }}</p>
-                <a class="my-5">{{ training.link }} <i class="fas fa-chevron-right mx-2"></i></a>
+                <a href="#" class="my-5">{{ training.link }} <i class="fas fa-chevron-right mx-2"></i></a>
             </div>  
         </div>
     </section>
@@ -47,6 +47,12 @@ export default {
                     display: block;
                     text-decoration: none;
                     color: white;
+                    transition: all 0.2s;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        color: #4154fe;
+                    }
                 }
             }
         }   

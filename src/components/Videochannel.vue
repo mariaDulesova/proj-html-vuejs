@@ -84,7 +84,7 @@ export default {
 
         .ms-btn-full{
             background-color:#f04e4b;
-            border-radius: 25px;
+            border-radius: 30px;
             color: white;
             transition: all 0.3s;
             &:hover {

@@ -6,6 +6,7 @@
           <div class="ms-img-container position-relative ">
             <img :src="require(`../assets/img/${service.name}.jpg`)" :alt="`${service.title}`">
             <div class="position-absolute bottom-0 start-0 pt-5 ps-2 pb-2 ms-text-absolute">
+              <img src="../assets/img/waveW.png" alt="White Wave" class="ms-wave ms-3 mb-3">
               <h4 class="ms-3">{{ service.title }}</h4>
               <p class="ms-3">{{ service.subTitle }}</p>
             </div> 
@@ -72,16 +73,24 @@ export default {
         width: calc(90% / 3);
 
         .ms-img-container{
-          margin-top: -110px;
+          margin-top: -90px;
           border-radius: 10px 10px 70px 10px;
           overflow: hidden;
+          transition: all 0.2s;
+
+          &:hover{
+            transform: scale(1.1);
+          }
         }
+      }
+
+      .ms-wave{
+        width: 50px;
       }
 
       img {
         width: 100%;
         overflow: hidden;
-        //transition: all 0.2s;
       }
     
       .ms-text-absolute{
@@ -99,6 +108,10 @@ export default {
         }
 
       }
+    }
+
+    q{
+      width: 70%;
     }
     
     .ms-avatar{
